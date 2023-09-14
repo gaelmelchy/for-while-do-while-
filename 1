@@ -1,0 +1,87 @@
+/*
+#include <stdio.h>
+
+int main()
+{
+  int num1, num2,x;
+  
+  printf("Primer numero:");
+  scanf("%d", &num1);
+  printf("Segundo numero:");
+  scanf("%d", &num2);
+  
+  if (num1>num2)
+  {
+  	printf("Valores incorectos");
+  }
+  
+  else 
+  {
+  	
+  	for (x=num1; x<= num2; x++){
+  		
+  		if (x%2==0)
+  		  printf("%d\n",x);	
+  		
+  	}
+  }
+  
+  
+  
+
+  	
+  	 return 0;
+  }
+
+*/
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int opcion, letreros, num;
+
+    printf("Elija el tipo de bucle:\n");
+    printf("1. Do-While\n");
+    printf("2. For\n");
+    printf("3. While\n");
+    scanf("%d", &opcion);
+
+    switch (opcion) {
+        case 1:
+            printf("Número de letreros: ");
+            scanf("%d", &letreros);
+            
+            num = 0;
+            do {
+                printf("Hola Mundo\n");
+                num++;
+            } while (num < letreros);
+            break;
+
+        case 2:
+            printf("Número de letreros: ");
+            scanf("%d", &letreros);
+
+            for (num = 0; num < letreros; num++) {
+                printf("Hola Mundo\n");
+            }
+            break;
+
+        case 3:
+            printf("Número de letreros: ");
+            scanf("%d", &letreros);
+
+            num = 0;
+            while (num < letreros) {
+                printf("Hola Mundo\n");
+                num++;
+            }
+            break;
+    }
+
+    return 0;
+}
+
